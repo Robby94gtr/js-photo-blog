@@ -11,6 +11,10 @@ h1{
     text-align: center;
 }
 
+p{
+    font-family: 'Edu Tas Beginner', sans-serif;
+}
+
 .wall{
     background-image: url(../img/wall.png);
 }
@@ -22,6 +26,6 @@ h1{
 
 .img-container{
     width: 30%;
-    height: 350px;
+    /* height: 350px; */
 }
 
