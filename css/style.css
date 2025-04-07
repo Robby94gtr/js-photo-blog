@@ -14,3 +14,10 @@ h1{
 .wall{
     background-image: url(../img/wall.png);
 }
+
+.bacheca{
+    background-image: url(../img/cork.png);
+    height: 1200px;
+}
+
+
