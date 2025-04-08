@@ -19,14 +19,13 @@ const createPolaroid = (array) => {
     array.forEach((photo) => {
         let {id, title, date, url} = photo;
         // aggiungo id al img-container
-        element +=  `<div class="column bg-light  img-container d-flex flex-wrap position-relative pt-3 px-3 my-4 ${id}">
+        element +=  `<div class="column bg-light  img-container d-flex flex-wrap flex-column position-relative pt-3 pb-4 px-3 my-4 ${id}">
                     <img class="w-100" src="${url}" alt="">
+                    <div class="title">${title}</div>
                     <div class="date">${date}</div>
-                            <div class="title">${title.toUpperCase()}</div>
-                        </div>
                         <div class="pin">
                             <img src="./img/pin.svg" alt="pin">
-                    </div>
+                        </div>
                 </div>`
     });
 
@@ -37,4 +36,19 @@ const createPolaroid = (array) => {
     return element
 }
 
+// Chiamata axios per prelevare tutte le informazioni che mi servono
+axios.get(endpoint)
+    .then((resp) => {
+        console.log(resp)
+        console.log(resp.data)
+        
+        immagini = resp.data
+        console.log(immagini)
+
+       
+        const elements = createPolaroid(immagini);
+
+        row.innerHTML += elements;
+        
+    });
 

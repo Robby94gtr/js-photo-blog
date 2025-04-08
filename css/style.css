@@ -5,10 +5,17 @@
 }
 
 h1{
-    font-family: 'Edu Tas Beginner', sans-serif;
     font-weight: 900;
     font-size: 100px;
     text-align: center;
+}
+
+h1, .title{
+    font-family: 'Edu Tas Beginner', sans-serif;
+}
+
+.date{
+    font-family: 'Sometype Mono', 'monospace';
 }
 
 p{
@@ -21,7 +28,7 @@ p{
 
 .bacheca{
     background-image: url(../img/cork.png);
-    height: 1200px;
+    /* height: 1200px; */
 }
 
 .img-container{
