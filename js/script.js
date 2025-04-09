@@ -84,32 +84,8 @@ axios.get(endpoint)
                 overlay.classList.remove('overlay-hidden')
                 overlay.classList.add('overlay-active')
 
-                // if(image.classList.contains(1)){
-                //     correctImage(images[0].url);
-                // }
-                // else if(image.classList.contains(2)){
-                //     correctImage(images[1].url);
-                // }
-                // else if(image.classList.contains(3)){
-                //     correctImage(images[2].url);
-                // }
-                // else if(image.classList.contains(4)){
-                //     correctImage(images[3].url);
-                // }
-                // else if(image.classList.contains(5)){
-                //     correctImage(images[4].url);
-                // }
-                // else{
-                //     correctImage(images[5].url);
-                // }
-
-                // better way
-
                 const classIndex = parseInt([...image.classList].find(cls => !isNaN(cls))) - 1;
-                // image is a Nodelist, not a classic array. I'll use spread operator to transform it into a classic array
-                // ...image.classList access the classList of the clicked image
-                // .find(cls => !isNaN(cls)) find the first class that is a number
-                // parseInt transform it into a number
+               
                 correctImage(immagini[classIndex].url);
             })
         });
