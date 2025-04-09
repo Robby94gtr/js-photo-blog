@@ -18,12 +18,18 @@
 </head>
 <body>
     <!-- Overlay -->
-    <div class="overlay">
-        <button id="over-btn">CHIUDI</button>
-        <div>
-            <img id="over-img" src="https://picsum.photos/600" alt="">
+    <div class="overlay overlay-hidden">
+
+        <div id="overlay-btn-container" class="col-100 d-flex justify-content-center align-items-center">
+            <button class="close-view">Chiudi</button>
         </div>
+
+        <div id="overlay-img-container" class="col-100  d-flex justify-content-center align-items-center">
+            <img src="https://picsum.photos/600" alt="">
+        </div>
+
     </div>
+
     <!-- Estate '24 -->
 
     <div class="wall py-4">
@@ -47,6 +53,10 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
